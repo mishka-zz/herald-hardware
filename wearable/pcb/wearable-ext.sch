@@ -273,31 +273,31 @@ $EndComp
 $Comp
 L Mechanical:Fiducial FID?
 U 1 1 60F69451
-P 9000 1250
+P 8900 2800
 AR Path="/60F1D377/60F69451" Ref="FID?"  Part="1" 
 AR Path="/60F4C181/60F69451" Ref="FID3"  Part="1" 
-F 0 "FID3" H 9085 1296 50  0000 L CNN
-F 1 "Fiducial" H 9085 1205 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 9000 1250 50  0001 C CNN
-F 3 "~" H 9000 1250 50  0001 C CNN
-F 4 "~" H 9000 1250 50  0001 C CNN "MPN"
-F 5 "Fiducial point" H 9000 1250 50  0001 C CNN "Description"
-	1    9000 1250
+F 0 "FID3" H 8985 2846 50  0000 L CNN
+F 1 "Fiducial" H 8985 2755 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 8900 2800 50  0001 C CNN
+F 3 "~" H 8900 2800 50  0001 C CNN
+F 4 "~" H 8900 2800 50  0001 C CNN "MPN"
+F 5 "Fiducial point" H 8900 2800 50  0001 C CNN "Description"
+	1    8900 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:Fiducial FID?
 U 1 1 60F69458
-P 10000 1250
+P 9900 2800
 AR Path="/60F1D377/60F69458" Ref="FID?"  Part="1" 
 AR Path="/60F4C181/60F69458" Ref="FID4"  Part="1" 
-F 0 "FID4" H 10085 1296 50  0000 L CNN
-F 1 "Fiducial" H 10085 1205 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 10000 1250 50  0001 C CNN
-F 3 "~" H 10000 1250 50  0001 C CNN
-F 4 "~" H 10000 1250 50  0001 C CNN "MPN"
-F 5 "Fiducial point" H 10000 1250 50  0001 C CNN "Description"
-	1    10000 1250
+F 0 "FID4" H 9985 2846 50  0000 L CNN
+F 1 "Fiducial" H 9985 2755 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 9900 2800 50  0001 C CNN
+F 3 "~" H 9900 2800 50  0001 C CNN
+F 4 "~" H 9900 2800 50  0001 C CNN "MPN"
+F 5 "Fiducial point" H 9900 2800 50  0001 C CNN "Description"
+	1    9900 2800
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -340,7 +340,7 @@ Wire Wire Line
 Connection ~ 3750 1600
 Wire Wire Line
 	3750 1600 4250 1600
-Text Notes 7900 3900 2    50   ~ 10
+Text Notes 7400 3900 2    50   ~ 10
 Pulse Oximeter & Heart Rate Monitor
 Text Notes 6850 7650 2    50   ~ 10
 Temperature Sensor
@@ -620,7 +620,7 @@ F 3 "" H 3500 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	8000 4000 8000 550 
+	7500 4000 7500 550 
 $Comp
 L power:GND1 #PWR0113
 U 1 1 6155818A
@@ -748,7 +748,7 @@ Text Notes 9400 3100 0    50   ~ 0
 Text Notes 9950 3700 0    50   ~ 0
 (GND)
 Wire Notes Line
-	8000 2000 11150 2000
+	7500 2000 11150 2000
 Wire Wire Line
 	5950 2300 6200 2300
 Text Notes 11100 3900 2    50   ~ 10
@@ -772,6 +772,8 @@ F 0 "TP112" H 3642 6526 50  0000 R CNN
 F 1 "ThPad" H 3642 6617 50  0000 R CNN
 F 2 "TestPoint:TestPoint_Pad_D4.0mm" H 3900 6500 50  0001 C CNN
 F 3 "~" H 3900 6500 50  0001 C CNN
+F 4 "Thermal Guide" H 3700 6500 50  0001 C CNN "Description"
+F 5 "~" H 3700 6500 50  0001 C CNN "MPN"
 	1    3700 6500
 	-1   0    0    1   
 $EndComp
@@ -798,4 +800,119 @@ F 3 "~" H 3500 7100 50  0001 C CNN
 	1    3500 7100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 60B1A6ED
+P 9300 1350
+F 0 "J4" H 9350 1667 50  0000 C CNN
+F 1 "TagConnect" H 9350 1576 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical" H 9300 1350 50  0001 C CNN
+F 3 "~" H 9300 1350 50  0001 C CNN
+	1    9300 1350
+	1    0    0    -1  
+$EndComp
+Text Label 9100 1250 2    50   ~ 0
+TC_VREF
+Text Label 9100 1350 2    50   ~ 0
+TC_RESET
+Text Label 9100 1450 2    50   ~ 0
+TC_GND
+Text Label 9600 1250 0    50   ~ 0
+TC_SWDIO
+Text Label 9600 1350 0    50   ~ 0
+TC_SWDCLK
+Text Label 9600 1450 0    50   ~ 0
+TC_SWO
+$Comp
+L Connector:TestPoint TP401
+U 1 1 60B20C30
+P 8700 1250
+F 0 "TP401" V 8895 1322 50  0000 C CNN
+F 1 "TestPoint" V 8804 1322 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8900 1250 50  0001 C CNN
+F 3 "~" H 8900 1250 50  0001 C CNN
+F 4 "TC Solder Pad" H 8700 1250 50  0001 C CNN "Description"
+F 5 "~" H 8700 1250 50  0001 C CNN "MPN"
+	1    8700 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP403
+U 1 1 60B219E6
+P 8400 1350
+F 0 "TP403" V 8595 1422 50  0000 C CNN
+F 1 "TestPoint" V 8504 1422 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8600 1350 50  0001 C CNN
+F 3 "~" H 8600 1350 50  0001 C CNN
+F 4 "TC Solder Pad" H 8400 1350 50  0001 C CNN "Description"
+F 5 "~" H 8400 1350 50  0001 C CNN "MPN"
+	1    8400 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP405
+U 1 1 60B21C4C
+P 8100 1450
+F 0 "TP405" V 8295 1522 50  0000 C CNN
+F 1 "TestPoint" V 8204 1522 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8300 1450 50  0001 C CNN
+F 3 "~" H 8300 1450 50  0001 C CNN
+F 4 "TC Solder Pad" H 8100 1450 50  0001 C CNN "Description"
+F 5 "~" H 8100 1450 50  0001 C CNN "MPN"
+	1    8100 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP402
+U 1 1 60B22D06
+P 10400 1250
+F 0 "TP402" V 10354 1438 50  0000 L CNN
+F 1 "TestPoint" V 10445 1438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10600 1250 50  0001 C CNN
+F 3 "~" H 10600 1250 50  0001 C CNN
+F 4 "TC Solder Pad" H 10400 1250 50  0001 C CNN "Description"
+F 5 "~" H 10400 1250 50  0001 C CNN "MPN"
+	1    10400 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP404
+U 1 1 60B2385F
+P 10150 1350
+F 0 "TP404" V 10104 1538 50  0000 L CNN
+F 1 "TestPoint" V 10195 1538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10350 1350 50  0001 C CNN
+F 3 "~" H 10350 1350 50  0001 C CNN
+F 4 "TC Solder Pad" H 10150 1350 50  0001 C CNN "Description"
+F 5 "~" H 10150 1350 50  0001 C CNN "MPN"
+	1    10150 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP406
+U 1 1 60B24E5D
+P 9900 1450
+F 0 "TP406" V 9854 1638 50  0000 L CNN
+F 1 "TestPoint" V 9945 1638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10100 1450 50  0001 C CNN
+F 3 "~" H 10100 1450 50  0001 C CNN
+F 4 "TC Solder Pad" H 9900 1450 50  0001 C CNN "Description"
+F 5 "~" H 9900 1450 50  0001 C CNN "MPN"
+	1    9900 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 1250 9100 1250
+Wire Wire Line
+	9100 1350 8400 1350
+Wire Wire Line
+	8100 1450 9100 1450
+Wire Wire Line
+	9600 1250 10400 1250
+Wire Wire Line
+	10150 1350 9600 1350
+Wire Wire Line
+	9600 1450 9900 1450
+Text Notes 11150 1900 2    50   ~ 10
+TagConnect Header (detached)
 $EndSCHEMATC
